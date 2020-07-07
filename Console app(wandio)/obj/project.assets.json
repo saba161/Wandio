@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sabak\\OneDrive\\Рабочий стол\\Wandio\\Wandio.csproj",
+      "projectUniqueName": "C:\\Users\\sabak\\OneDrive\\Рабочий стол\\Wandio\\Console app(wandio)\\Wandio.csproj",
       "projectName": "Wandio",
-      "projectPath": "C:\\Users\\sabak\\OneDrive\\Рабочий стол\\Wandio\\Wandio.csproj",
+      "projectPath": "C:\\Users\\sabak\\OneDrive\\Рабочий стол\\Wandio\\Console app(wandio)\\Wandio.csproj",
       "packagesPath": "C:\\Users\\sabak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sabak\\OneDrive\\Рабочий стол\\Wandio\\obj\\",
+      "outputPath": "C:\\Users\\sabak\\OneDrive\\Рабочий стол\\Wandio\\Console app(wandio)\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

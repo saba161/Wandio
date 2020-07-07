@@ -1,39 +1,89 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Wandio.Extension;
-using Wandio.Extension.FirstOrNew;
 using static System.Console;
 
 namespace Wandio
 {
+
     class Program
     {
         static void Main(string[] args)
         {
-            List<int> arr = new List<int>() { };
+            string numbers = Console.ReadLine();
 
-            Predicate<int> check = CheckValueInList;
+            var listOfInts = numbers
+                .Split(',')
+                .Select(Int32.Parse).ToList();
 
-            var result = arr.ThisDoesntMakeAnySense<int>(check);
+            VariantOne(listOfInts); //return new list with new item
+
+            WriteLine(" ");
+
+            VariantTwo(listOfInts); //return default list
+
+            WriteLine(" ");
+
+            VariantThree(listOfInts); //return Exeption
         }
 
-        public static bool CheckValueInList(int x)
+        public static void VariantOne(List<int> listOfInts)
         {
-            return true;
+            WriteLine("Add new element");
+
+            Input(listOfInts);
+
+            var resultOne = listOfInts.ThisDoesntMakeAnySense<int>(x => x == 5, () => 5);
+            WriteLine(" ");
+
+            Output(resultOne);
         }
 
-        public static bool Check(List<int> list, int x)
+        public static void VariantTwo(List<int> listOfInts)
         {
+            WriteLine("default list");
+
+            Input(listOfInts);
+
+            var resultTwo = listOfInts.ThisDoesntMakeAnySense<int>(x => x == 3, () => 3);
+
+            WriteLine(" ");
+
+            Output(resultTwo);
+        }
+
+        public static void VariantThree(List<int> listOfInts)
+        {
+            WriteLine("List is NUll");
+
+            Input(listOfInts);
+
+            var resultThree = listOfInts.ThisDoesntMakeAnySense<int>(x => x == 3, () => 3);
+
+            WriteLine(" ");
+
+            Output(resultThree);
+        }
+
+        public static void Input(IEnumerable<int> list)
+        {
+            Write("Input: ");
+
             foreach (var item in list)
             {
-                if (item == x)
-                {
-                    return true;
-                }
+                Write(item + " ");
             }
-            return false;
+        }
+
+        public static void Output(IEnumerable<int> list)
+        {
+            Write("Output: ");
+
+            foreach (var item in list)
+            {
+                Write(item + " ");
+            }
         }
     }
 }
-
-
