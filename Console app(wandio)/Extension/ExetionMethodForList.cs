@@ -10,7 +10,7 @@ namespace Wandio.Extension
         {
             if(list == null)
             {
-                throw new ArgumentException("list can't be null");
+                throw new ArgumentNullException();
             }
 
             if (!list.Any(check))

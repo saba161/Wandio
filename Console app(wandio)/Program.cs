@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using Wandio.Extension;
 using static System.Console;
+using static Wandio.Test.Assert;
 
 namespace Wandio
 {
-
     class Program
     {
         static void Main(string[] args)
@@ -17,73 +17,36 @@ namespace Wandio
                 .Split(',')
                 .Select(Int32.Parse).ToList();
 
-            VariantOne(listOfInts); //return new list with new item
+            //First Test
+            WriteLine($"Input: {numbers}");
+            AreEqual
+                (
+                    listOfInts,
+                    listOfInts.ThisDoesntMakeAnySense(x => x == 3, () => 3)
+                );
 
-            WriteLine(" ");
+            WriteLine();
 
-            VariantTwo(listOfInts); //return default list
+            //Second Test
+            WriteLine($"Input: {numbers}");
+            AreEqual
+                (
+                    listOfInts,
+                    listOfInts.ThisDoesntMakeAnySense(x => x == 10, () => 10)
+                );
 
-            WriteLine(" ");
+            WriteLine();
 
-            VariantThree(listOfInts); //return Exeption
-        }
+            //Three Test
 
-        public static void VariantOne(List<int> listOfInts)
-        {
-            WriteLine("Add new element");
+            List<int> list = null;
 
-            Input(listOfInts);
-
-            var resultOne = listOfInts.ThisDoesntMakeAnySense<int>(x => x == 5, () => 5);
-            WriteLine(" ");
-
-            Output(resultOne);
-        }
-
-        public static void VariantTwo(List<int> listOfInts)
-        {
-            WriteLine("default list");
-
-            Input(listOfInts);
-
-            var resultTwo = listOfInts.ThisDoesntMakeAnySense<int>(x => x == 3, () => 3);
-
-            WriteLine(" ");
-
-            Output(resultTwo);
-        }
-
-        public static void VariantThree(List<int> listOfInts)
-        {
-            WriteLine("List is NUll");
-
-            Input(listOfInts);
-
-            var resultThree = listOfInts.ThisDoesntMakeAnySense<int>(x => x == 3, () => 3);
-
-            WriteLine(" ");
-
-            Output(resultThree);
-        }
-
-        public static void Input(IEnumerable<int> list)
-        {
-            Write("Input: ");
-
-            foreach (var item in list)
-            {
-                Write(item + " ");
-            }
-        }
-
-        public static void Output(IEnumerable<int> list)
-        {
-            Write("Output: ");
-
-            foreach (var item in list)
-            {
-                Write(item + " ");
-            }
+            WriteLine($"Input: {numbers}");
+            AreEqual
+                (
+                    null,
+                    list.ThisDoesntMakeAnySense(x => x == 1, () => 19)
+                );
         }
     }
 }
