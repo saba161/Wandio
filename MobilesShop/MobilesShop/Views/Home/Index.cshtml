@@ -1,0 +1,32 @@
+﻿@model IEnumerable<MobilesShop.Models.PhoneFeatures>
+
+<form asp-controller="Filter" asp-action="ByName" method="get">
+    Name: <input type="text" name="phoneName" value="" />
+    <input type="submit" value="Search" />
+</form>
+
+<form asp-controller="Filter" asp-action="ByName" method="get">
+    Manufacturer: <input type="text" name="manufacturer" value="" />
+    <input type="submit" value="Search" />
+</form>
+
+<form asp-controller="Filter" asp-action="ByPrice" method="get">
+    From: <input type="number" name="from" value="" />
+    To: <input type="number" name="to" value="" />
+    <input type="submit" value="Search" />
+</form>
+
+@foreach (var item in Model)
+{
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            <div class="caption">
+                <h3>
+                    <a asp-controller="Home" asp-action="Details" asp-route-id="@item.ID">@item.Name</a>
+                </h3>
+                <h3 class="pull-right">@item.Price.ToString("c")</h3>
+            </div>
+        </div>
+    </div>
+    <br />
+}
