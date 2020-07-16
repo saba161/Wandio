@@ -4967,11 +4967,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sabak\\OneDrive\\Рабочий стол\\MobilesShop\\MobilesShop\\MobilesShop.csproj",
+      "projectUniqueName": "C:\\Users\\sabak\\OneDrive\\Рабочий стол\\Wandio\\MobilesShop\\MobilesShop\\MobilesShop.csproj",
       "projectName": "MobilesShop",
-      "projectPath": "C:\\Users\\sabak\\OneDrive\\Рабочий стол\\MobilesShop\\MobilesShop\\MobilesShop.csproj",
+      "projectPath": "C:\\Users\\sabak\\OneDrive\\Рабочий стол\\Wandio\\MobilesShop\\MobilesShop\\MobilesShop.csproj",
       "packagesPath": "C:\\Users\\sabak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sabak\\OneDrive\\Рабочий стол\\MobilesShop\\MobilesShop\\obj\\",
+      "outputPath": "C:\\Users\\sabak\\OneDrive\\Рабочий стол\\Wandio\\MobilesShop\\MobilesShop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -37,13 +37,5 @@ namespace MobilesShop.Services
 
             return phones;
         }
-
-        public IEnumerable<PhoneFeatures> Search(string phoneName)
-        {
-            var phones = _context.Phone
-                .Where(s => s.Name.Contains(phoneName));
-
-            return phones;
-        }
     }
 }

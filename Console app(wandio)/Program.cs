@@ -12,10 +12,6 @@ namespace Wandio
     {
         static void Main(string[] args)
         {
-            List<int> lis2 = new List<int> { 2, 3, 1 };
-
-            var s = lis2.FirstOrNew();
-
             string numbers = Console.ReadLine();
 
             var listOfInts = numbers
