@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Wandio.Extension;
+using Wandio.Extension.FirstOrNew;
 using static System.Console;
 using static Wandio.Test.Assert;
 
@@ -11,6 +12,10 @@ namespace Wandio
     {
         static void Main(string[] args)
         {
+            List<int> lis2 = new List<int> { 2, 3, 1 };
+
+            var s = lis2.FirstOrNew();
+
             string numbers = Console.ReadLine();
 
             var listOfInts = numbers

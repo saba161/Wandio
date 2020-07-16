@@ -15,7 +15,12 @@ namespace Wandio.Extension.FirstOrNew
                 throw new ArgumentException("Value can't be null");
             }
 
-            var count = list.Count();
+            var count = 0;
+
+            foreach (var item in list)
+            {
+                count++;
+            }
 
             if (count > 0)
             {
