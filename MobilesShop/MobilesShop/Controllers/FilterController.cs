@@ -23,7 +23,7 @@ namespace MobilesShop.Controllers
             }
             catch (Exception ex)
             {
-                throw new System.ArgumentException("General ex");
+                throw new ArgumentException($"General {ex}");
             }
         }
 
@@ -38,7 +38,7 @@ namespace MobilesShop.Controllers
             }
             catch (Exception ex)
             {
-                throw new System.ArgumentException("General ex");
+                throw new ArgumentException($"General {ex}");
             }
         }
 
@@ -53,7 +53,7 @@ namespace MobilesShop.Controllers
             }
             catch (Exception ex)
             {
-                throw new System.ArgumentException("General ex");
+                throw new ArgumentException($"General {ex}");
             }
         }
     }

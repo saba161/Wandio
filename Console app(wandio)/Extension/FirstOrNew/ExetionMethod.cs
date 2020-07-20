@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Wandio.Extension.FirstOrNew
 {
@@ -15,16 +13,11 @@ namespace Wandio.Extension.FirstOrNew
                 throw new ArgumentException("Value can't be null");
             }
 
-            var count = 0;
+            var enumerator = list.GetEnumerator();
 
-            foreach (var item in list)
+            if (enumerator.MoveNext())
             {
-                count++;
-            }
-
-            if (count > 0)
-            {
-                return list.ElementAt(0);
+                return enumerator.Current;
             }
 
             return new T();

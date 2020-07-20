@@ -12,7 +12,7 @@ namespace Wandio
     {
         static void Main(string[] args)
         {
-            string numbers = Console.ReadLine();
+            string numbers = ReadLine();
 
             var listOfInts = numbers
                 .Split(',')
@@ -39,7 +39,6 @@ namespace Wandio
             WriteLine();
 
             //Three Test
-
             List<int> list = null;
 
             WriteLine($"Input: {numbers}");
