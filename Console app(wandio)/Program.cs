@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using Wandio.Extension;
-using Wandio.Extension.FirstOrNew;
 using static System.Console;
 using static Wandio.Test.Assert;
 
@@ -17,6 +16,7 @@ namespace Wandio
             var listOfInts = numbers
                 .Split(',')
                 .Select(Int32.Parse).ToList();
+
 
             //First Test
             WriteLine($"Input: {numbers}");

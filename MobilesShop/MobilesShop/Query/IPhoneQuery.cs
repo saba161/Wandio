@@ -1,13 +1,14 @@
 ﻿using MobilesShop.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MobilesShop.Services
 {
-    public interface IFilter
+    public interface IPhoneQuery
     {
+        PhoneFeatures GetPhoneById(int id);
+
+        IEnumerable<PhoneFeatures> GetAllPhones();
+
         IEnumerable<PhoneFeatures> GetPhoneByName(string name);
 
         IEnumerable<PhoneFeatures> GetPhoneByPrice(int from, int to);

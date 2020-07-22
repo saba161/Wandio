@@ -125,9 +125,6 @@ C:\Users\sabak\OneDrive\Рабочий стол\Wandio\MobilesShop\MobilesShop\o
 C:\Users\sabak\OneDrive\Рабочий стол\Wandio\MobilesShop\MobilesShop\obj\Debug\netcoreapp3.1\MobilesShop.TagHelpers.input.cache
 C:\Users\sabak\OneDrive\Рабочий стол\Wandio\MobilesShop\MobilesShop\obj\Debug\netcoreapp3.1\MobilesShop.TagHelpers.output.cache
 C:\Users\sabak\OneDrive\Рабочий стол\Wandio\MobilesShop\MobilesShop\obj\Debug\netcoreapp3.1\MobilesShop.RazorCoreGenerate.cache
-C:\Users\sabak\OneDrive\Рабочий стол\Wandio\MobilesShop\MobilesShop\obj\Debug\netcoreapp3.1\Razor\Views\Filter\ByManufacturer.cshtml.g.cs
-C:\Users\sabak\OneDrive\Рабочий стол\Wandio\MobilesShop\MobilesShop\obj\Debug\netcoreapp3.1\Razor\Views\Filter\ByName.cshtml.g.cs
-C:\Users\sabak\OneDrive\Рабочий стол\Wandio\MobilesShop\MobilesShop\obj\Debug\netcoreapp3.1\Razor\Views\Filter\ByPrice.cshtml.g.cs
 C:\Users\sabak\OneDrive\Рабочий стол\Wandio\MobilesShop\MobilesShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Details.cshtml.g.cs
 C:\Users\sabak\OneDrive\Рабочий стол\Wandio\MobilesShop\MobilesShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\sabak\OneDrive\Рабочий стол\Wandio\MobilesShop\MobilesShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
@@ -144,3 +141,6 @@ C:\Users\sabak\OneDrive\Рабочий стол\Wandio\MobilesShop\MobilesShop\o
 C:\Users\sabak\OneDrive\Рабочий стол\Wandio\MobilesShop\MobilesShop\obj\Debug\netcoreapp3.1\MobilesShop.dll
 C:\Users\sabak\OneDrive\Рабочий стол\Wandio\MobilesShop\MobilesShop\obj\Debug\netcoreapp3.1\MobilesShop.pdb
 C:\Users\sabak\OneDrive\Рабочий стол\Wandio\MobilesShop\MobilesShop\obj\Debug\netcoreapp3.1\MobilesShop.genruntimeconfig.cache
+C:\Users\sabak\OneDrive\Рабочий стол\Wandio\MobilesShop\MobilesShop\obj\Debug\netcoreapp3.1\Razor\Views\Phone\FilterPhoneByManufacturer.cshtml.g.cs
+C:\Users\sabak\OneDrive\Рабочий стол\Wandio\MobilesShop\MobilesShop\obj\Debug\netcoreapp3.1\Razor\Views\Phone\FilterPhoneByName.cshtml.g.cs
+C:\Users\sabak\OneDrive\Рабочий стол\Wandio\MobilesShop\MobilesShop\obj\Debug\netcoreapp3.1\Razor\Views\Phone\FilterPhoneByPrice.cshtml.g.cs

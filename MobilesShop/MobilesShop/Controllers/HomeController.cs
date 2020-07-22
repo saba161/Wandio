@@ -6,25 +6,32 @@ namespace MobilesShop.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IGeneralMethods general;
+        private readonly IPhoneQuery _phoneQuery;
 
-        public HomeController(IGeneralMethods general)
+        public HomeController(IPhoneQuery phoneQuery)
         {
-            this.general = general;
+            _phoneQuery = phoneQuery;
         }
 
         public IActionResult Index()
         {
-            var result = general.GetPhones();
+            try
+            {
+                var result = _phoneQuery.GetAllPhones();
 
-            return View(result);
+                return View(result);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"General {ex}");
+            }
         }
 
-        public IActionResult Details(int id)
+        public IActionResult PhoneDetails(int id)
         {
             try
             {
-                var phone = general.GetPhoneById(id);
+                var phone = _phoneQuery.GetPhoneById(id);
 
                 if (phone == null)
                 {
@@ -35,7 +42,7 @@ namespace MobilesShop.Controllers
             }
             catch (Exception ex)
             {
-                throw new System.ArgumentException("General ex");
+                throw new Exception($"General {ex}");
             }
         }
     }

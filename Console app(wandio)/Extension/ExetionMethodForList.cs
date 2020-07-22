@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Wandio.Extension
 {
@@ -8,18 +7,24 @@ namespace Wandio.Extension
     {
         public static IEnumerable<T> ThisDoesntMakeAnySense<T>(this List<T> list, Func<T, bool> check, Func<T> generator)
         {
-            if(list == null)
+            if (list == null)
             {
                 throw new ArgumentNullException();
             }
 
-            if (!list.Any(check))
+            var enumerator = list.GetEnumerator();
+
+            foreach (var item in list)
             {
-                list.Add(generator.Invoke());
+                if (enumerator.MoveNext() == check(enumerator.Current))
+                {
+                    return list;
+                }
             }
+
+            list.Add(generator());
 
             return list;
         }
     }
 }
-
